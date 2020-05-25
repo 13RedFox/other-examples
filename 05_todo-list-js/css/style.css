@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  padding: 0 15px;
+}
+
+.block {
+  width: 500px;
+  background-color: rgba(204, 204, 204, 0.39);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.block__title {
+  font-size: 18px;
+  line-height: 1;
+  text-align: center;
+  margin-bottom: 15px;
+  color: chocolate;
+}
+
+.block__form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.block__form-input {
+  width: 77%;
+  padding: 10px;
+  color: chocolate;
+  border: 2px solid rosybrown;
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.block__form-input:focus {
+  border-color: royalblue;
+}
+.block__form-btn {
+  width: 20%;
+  padding: 10px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+  background: rosybrown;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.block__form-btn:hover {
+  background-color: royalblue;
+  color: #fff;
+}
+
+.block__list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  border: 1px solid rgb(98, 228, 156);
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.block__list-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  color: red;
+  font-size: 18px;
+  line-height: 1;
+  border: 2px solid rosybrown;
+  padding-left: 10px;
+  margin-bottom: 5px;
+  transition: all 0.3s ease;
+}
+
+.block__list-item:hover .block__list-delete {
+  transition: all 0.3s ease;
+  opacity: 1;
+}
+
+.block__list-delete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  background-color: rosybrown;
+  color: white;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  border-radius: 50%;
+  width: 30px;
+  padding: 5px;
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+.block__list-delete:hover {
+  background-color: royalblue;
+  color: #000;
+}
+
+.block__list-delete:active {
+  background-color: royalblue;
+  color: red;
+}
