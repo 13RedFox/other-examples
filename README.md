@@ -2,4 +2,4 @@
 
 ## GitHub Pages
 
-> https://13redfox.github.io/other-examples
+> https://13redfox.github.io/other-examples/
